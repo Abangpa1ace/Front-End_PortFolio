@@ -1,0 +1,28 @@
+// Variables
+$gray0: #f6f6f6;
+$gray1: #c0c0c0;
+$gray2: #717171;
+$filter3 : rgba(0, 0, 0, 0.3);
+$beach: #29c1bc;
+$web-width: 1200px;
+$transition: all .3s ease;
+$z_Navbar: 1000;
+$z_OneDown: -1;
+
+// Extend
+%flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flexAlign {
+  display: flex;
+  align-items: center;
+}

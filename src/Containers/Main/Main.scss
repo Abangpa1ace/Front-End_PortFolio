@@ -1,0 +1,78 @@
+@import '../../Styles/common.scss';
+
+#Main {
+  @extend %flexCenter;
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  overflow: hidden;
+
+  .background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-490px);
+    z-index: $z_OneDown;
+  }
+
+  .main-info {
+    width: $web-width;
+    color: #ffffff;
+    text-align: center;
+
+    h1 {
+      font-size: 70px;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 1.5;
+
+      strong {
+        animation: letterShine 5s ease infinite;
+      }
+    }
+  }
+
+  .down-container {
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+
+    .down-btn {
+      padding: 20px 60px;
+      color: #ffffff;
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid #ffffff;
+    }
+
+    .down-arrow {
+      margin: 20px 0 0;
+      color: #ffffff;
+      font-size: 36px;
+      animation: arrowDown 1.5s ease-out infinite;
+    }
+  }
+}
+
+@keyframes arrowDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes letterShine {
+  0%, 100% {
+    color: #ffffff;
+  }
+  25%, 75% {
+    color: $beach;
+  }
+}

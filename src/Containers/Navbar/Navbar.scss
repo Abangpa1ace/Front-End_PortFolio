@@ -1,0 +1,54 @@
+@import '../../Styles/common.scss';
+
+#Navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  color: #ffffff;
+  transition: $transition;
+  z-index: $z_Navbar;
+
+  &.shrink {
+    padding: 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid $gray0;
+  }
+
+  .nav-container {
+    @extend %flexBetween;
+    width: $web-width;
+    height: 70px;
+    margin: 0 auto;
+
+    .nav-menu {
+      @extend %flexCenter;
+
+      .nav-menu-item {
+        margin: 0 0 0 10px;
+        font-weight: 500;
+
+        &.focus {
+          background: $beach;
+          
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    h2, .nav-menu-item {
+      @extend %flexAlign;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: $transition;
+      cursor: pointer;
+      
+      &:hover {
+        color: $beach;
+        transform: scale(1.1);
+      }
+    } 
+  }
+}

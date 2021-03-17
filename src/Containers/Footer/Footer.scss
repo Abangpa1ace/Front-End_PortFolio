@@ -1,0 +1,14 @@
+@import '../../Styles/common.scss';
+
+#Footer {
+  padding: 20px 0;
+  color: #ffffff;
+  background: $filter3;
+  font-size: 14px;
+  text-align: center;
+
+  p {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,8 @@
+@import '../../Styles/common.scss';
+
+#About {
+  @extend %flexCenter;
+  height: 100vh;
+  font-size: 30px;
+  font-weight: bold;
+}
