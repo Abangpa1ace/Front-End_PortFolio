@@ -1,0 +1,14 @@
+@import '../../Styles/common.scss';
+
+#Contact {
+  @extend %flexCenterStart;
+  height: 90vh;
+  padding: $section-padding;
+  background: $gray0;
+
+  .contact-container {
+    width: $web-width;
+    margin: 0 auto;
+
+  }
+}
