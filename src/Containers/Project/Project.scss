@@ -1,10 +1,9 @@
 @import '../../Styles/common.scss';
 
-#About {
+#Project {
   @extend %flexCenterStart;
-  height: 100vh;
+  height: 250vh;
   padding: $section-padding;
-  background: $gray0;
 
   .about-container {
     width: $web-width;

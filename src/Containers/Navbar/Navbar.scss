@@ -23,9 +23,12 @@
 
     .nav-menu {
       @extend %flexCenter;
+      transform: translateX(20px);
 
       .nav-menu-item {
+        padding: 10px 20px;
         margin: 0 0 0 10px;
+        font-size: 18px;
         font-weight: 500;
 
         &.focus {
@@ -40,7 +43,6 @@
 
     h2, .nav-menu-item {
       @extend %flexAlign;
-      padding: 10px 20px;
       border-radius: 10px;
       transition: $transition;
       cursor: pointer;

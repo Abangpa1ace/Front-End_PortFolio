@@ -1,0 +1,27 @@
+@import '../../../Styles/common.scss';
+
+.about-profile {
+  @extend %flexCenter;
+  margin: 0 0 60px;
+
+  .profile-img {
+    width: 160px;
+    height: 160px;
+    border: 10px solid $gray1;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .profile-desc {
+    margin: 0 0 0 60px;
+    line-height: 1.7;
+
+    p {
+      font-weight: 400;
+    }
+  }
+}

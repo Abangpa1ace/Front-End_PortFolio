@@ -1,9 +1,9 @@
 import React from 'react';
 import "./Divider.scss";
 
-const Divider = ({ color }) => {
+const Divider = ({ background }) => {
   return (
-    <div className="divider" style={{ background: color }} />
+    <div className="divider" style={{ background: background }} />
   )
 }
 

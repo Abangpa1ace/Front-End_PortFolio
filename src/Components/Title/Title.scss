@@ -1,0 +1,16 @@
+@import '../../Styles/common.scss';
+
+.title {
+  text-align: center;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+
+    span {
+      margin: 0 0 0 5px;
+      color: $beach;
+      font-size: 40px;
+    }
+  }
+}
