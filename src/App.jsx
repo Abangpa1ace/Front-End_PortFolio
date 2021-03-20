@@ -6,6 +6,7 @@ import Project from "./Containers/Project/Project";
 import Contact from "./Containers/Contact/Contact";
 
 function App() {
+
   return (
     <div className="App">
       <Navbar />

@@ -9,6 +9,12 @@ const Navbar = () => {
   const handleScroll = useCallback(() => {
     const { pageYOffset } = window;
     setIsShrink(pageYOffset > 20);
+    setMenuFocus(
+      pageYOffset <= 1010 ? 0
+      : pageYOffset <= 2020 ? 1
+      : pageYOffset <= 3450 ? 2
+      : 3
+    )
   }, [])
 
   useEffect(() => {
@@ -18,15 +24,16 @@ const Navbar = () => {
 
   const changeMenuFocus = (id, scroll) => {
     setMenuFocus(id)
+    window.scrollTo(0, scroll);
   }
 
   return (
     <nav id="Navbar" className={isShrink ? 'shrink' : ''}>
       <section className='nav-container'>
-        <h2 onClick={() => changeMenuFocus(0)} >TaeHyung Kim</h2>
+        <h2 onClick={() => changeMenuFocus(0, 0)} >TaeHyung Kim</h2>
         <ul className="nav-menu">
           {NAVBAR_MENU.map(menu => 
-            <li key={menu.id} onClick={() => changeMenuFocus(menu.id)}
+            <li key={menu.id} onClick={() => changeMenuFocus(menu.id, menu.scroll)}
               className={`nav-menu-item ${menu.id === menuFocus ? 'focus' : ''}`} >
               {menu.text}
             </li>

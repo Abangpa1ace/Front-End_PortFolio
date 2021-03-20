@@ -6,12 +6,11 @@ import "./Project.scss";
 const Project = () => {
   return (
     <section id="Project">
-      <div className="about-container">
-        <Title>My ProJect</Title>
         <ul className="project-container">
+          <Title>My ProJect</Title>
           <li className="project-item">
             <div className="project-img">
-              <img src="./Images/background.jpeg" alt="project-img" />
+              <img src="./Images/PJT1-baemin-main.png" alt="project-img" />
             </div>
             <div className="project-desc">
               <h3><span>[#1. Group]</span> 배민문방구 클론 프로젝트</h3>
@@ -43,7 +42,7 @@ const Project = () => {
 
           <li className="project-item">
             <div className="project-img">
-              <img src="./Images/background.jpeg" alt="project-img" />
+              <img src="./Images/PJT2-airbnb-main.png" alt="project-img" />
             </div>
             <div className="project-desc">
               <h3><span>[#2. Personal]</span> 에어비앤비 클론 프로젝트</h3>
@@ -80,7 +79,7 @@ const Project = () => {
 
           <li className="project-item">
             <div className="project-img">
-              <img src="./Images/background.jpeg" alt="project-img" />
+              <img src="./Images/PJT3-nike-main.png" alt="project-img" />
             </div>
             <div className="project-desc">
               <h3><span>[#3. Personal]</span> 나이키 클론 프로젝트</h3>
@@ -93,7 +92,7 @@ const Project = () => {
                 <li>Redux, React-Redux Hooks를 활용한 Store 전역상태 참조 및 디스패치</li>
                 <li>Redux-Saga, Axios 라이브러리를 통한 비동기 서버 요청</li>
                 <li>Custom Hooks 제작 및 상태값에 따른 스크롤 애니메이션 구현</li>
-                <li>Express.js 서버: 부적절한 요청에 대한 Response Error 반환 및 Redux 에러처리 연계</li>
+                <li>Express.js 서버: POST Request 검사 및 false 시 Error Response 반환 (Redux 에러처리 연계)</li>
               </ul>
               <div className="project-link">
                 <span>
@@ -116,7 +115,6 @@ const Project = () => {
           </li>
 
         </ul>
-      </div>
     </section>
   )
 }

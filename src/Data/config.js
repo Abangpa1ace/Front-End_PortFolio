@@ -2,16 +2,16 @@ export const NAVBAR_MENU = [
   {
     id: 1,
     text: "About",
-    scroll: 100,
+    scroll: 1010,
   },
   {
     id: 2,
     text: "Project",
-    scroll: 2000,
+    scroll: 2020,
   },
   {
     id: 3,
     text: "Contact",
-    scroll: 4000,
+    scroll: 3470,
   },
 ]

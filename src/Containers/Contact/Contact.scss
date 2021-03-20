@@ -10,5 +10,109 @@
     width: $web-width;
     margin: 0 auto;
 
+    .contact-list {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-gap: 40px;
+      
+      h3 {
+        margin: 0 0 30px;
+        color: $beach;
+        font-size: 24px;
+        font-weight: 400;
+      }
+
+      p {
+        margin: 0 0 20px;
+        font-size: 18px;
+      }
+
+      a {
+        font-size: 18px;
+        font-weight: 300;
+        text-decoration: underline;
+        transition: $transition;
+
+        &:hover { color: $beach; };
+      }
+
+      svg {
+        margin: 0 10px 0 0; 
+        font-size: 18px;
+        transform: translateY(3px);
+      };
+
+      .contact-email {
+
+        .contact-email-form {
+
+          input, textarea {
+            display: block;
+            width: 100%;
+            margin: 10px 0 0;
+            padding: 10px;
+            border: none;
+            background: #ffffff;
+            border-top: 1px solid black;
+            outline: 0;
+  
+            &:focus, &:active {
+              transition: $transition;
+              border: 2px solid $beach;
+            }
+          }
+  
+          .form-name-mail {
+            margin: 0 0 30px;
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            grid-gap: 60px;
+  
+            input {
+              height: 35px;
+            }
+          }
+  
+          textarea {
+            height: 160px;
+          }
+  
+          .contact-submit-btn {
+            display: block;
+            width: 120px;
+            padding: 15px;
+            margin: 30px auto;
+            border: 1px solid black;
+            font-size: 18px;
+            transition: $transition;
+  
+            &:hover {
+              border-color: $beach;
+              background: $beach;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+
+      .contact-phone {
+        
+        a {
+          display: block;
+          margin: 0 0 20px;
+        }
+      }
+
+      .contact-reference {
+        p {
+          margin: 0 0 15px;
+        }
+
+        a {
+          display: block;
+          margin: 0 0 50px;
+        }
+      }
+    }
   }
 }
