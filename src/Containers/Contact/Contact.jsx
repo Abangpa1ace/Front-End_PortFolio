@@ -5,7 +5,7 @@ import { BiPhone, BiMessage } from 'react-icons/bi';
 import { FaGithub, FaBloggerB } from 'react-icons/fa';
 import "./Contact.scss";
 
-const Contact = () => {
+const Contact = ({ pageY }) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -23,7 +23,7 @@ const Contact = () => {
     <section id="Contact">
       <div className="contact-container">
         <Title>Contact With Me</Title>
-        <div className="contact-list">
+        <div className={`contact-list ${pageY > 2900 ? 'show' : ''}`}>
           <div className="contact-email">
             <h3>Email</h3>
             <p>- Gmail 보내기</p>
@@ -54,9 +54,9 @@ const Contact = () => {
           <div className="contact-reference">
             <h3>References</h3>
             <p>- Github</p>
-            <a href="https://github.com/Abangpa1ace"><FaGithub />github.com/Abangpa1ace</a>
+            <a href="https://github.com/Abangpa1ace" rel="noreferrer" target="_blank"><FaGithub />github.com/Abangpa1ace</a>
             <p>- Blog</p>
-            <a href="https://abangpa1ace.tistory.com/"><FaBloggerB />abangpa1ace.tistory.com/</a>
+            <a href="https://abangpa1ace.tistory.com/" rel="noreferrer" target="_blank"><FaBloggerB />abangpa1ace.tistory.com/</a>
           </div>
         </div>
 

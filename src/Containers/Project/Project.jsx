@@ -3,10 +3,11 @@ import Title from '../../Components/Title/Title';
 import { FaGithubSquare, FaYoutube, FaLink } from 'react-icons/fa';
 import "./Project.scss";
 
-const Project = () => {
+const Project = ({ pageY }) => {
+  console.log(pageY > 1400)
   return (
     <section id="Project">
-        <ul className="project-container">
+        <ul className={`project-container ${pageY > 1500 ? 'show' : ''}`}>
           <Title>My ProJect</Title>
           <li className="project-item">
             <div className="project-img">
@@ -27,12 +28,12 @@ const Project = () => {
               </ul>
               <div className="project-link">
                 <span>
-                  <a href="https://github.com/Abangpa1ace/React-PJT1-Baemin">
+                  <a href="https://github.com/Abangpa1ace/React-PJT1-Baemin" target="_blank" rel="noreferrer">
                     <FaGithubSquare />Github
                   </a>
                 </span>
                 <span>
-                  <a href="https://www.youtube.com/watch?v=AaUEtWd0aq4">
+                  <a href="https://www.youtube.com/watch?v=AaUEtWd0aq4" target="_blank" rel="noreferrer">
                     <FaYoutube/>영상
                   </a>
                 </span>
@@ -59,17 +60,17 @@ const Project = () => {
               </ul>
               <div className="project-link">
                 <span>
-                  <a href="https://github.com/Abangpa1ace/React-PJT2-AirTnT">
+                  <a href="https://github.com/Abangpa1ace/React-PJT2-AirTnT" target="_blank" rel="noreferrer">
                     <FaGithubSquare />Github
                   </a>
                 </span>
                 <span>
-                  <a href="/">
+                  <a href="/" target="_blank" rel="noreferrer">
                     <FaYoutube/>영상
                   </a>
                 </span>
                 <span>
-                  <a href="/">
+                  <a href="/" target="_blank" rel="noreferrer">
                     <FaLink />사이트 링크
                   </a>
                 </span>
@@ -96,17 +97,17 @@ const Project = () => {
               </ul>
               <div className="project-link">
                 <span>
-                  <a href="https://github.com/Abangpa1ace/React-PJT3-Nikel">
+                  <a href="https://github.com/Abangpa1ace/React-PJT3-Nikel" target="_blank" rel="noreferrer">
                     <FaGithubSquare />Github
                   </a>
                 </span>
                 <span>
-                  <a href="/">
+                  <a href="/" target="_blank" rel="noreferrer">
                     <FaYoutube/>영상
                   </a>
                 </span>
                 <span>
-                  <a href="/">
+                  <a href="/" target="_blank" rel="noreferrer">
                     <FaLink />사이트 링크
                   </a>
                 </span>

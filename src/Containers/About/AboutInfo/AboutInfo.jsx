@@ -4,9 +4,9 @@ import { GrPersonalComputer } from 'react-icons/gr';
 import { IoMdPaperPlane } from 'react-icons/io';
 import "./AboutInfo.scss";
 
-const AboutInfo = () => {
+const AboutInfo = ({ isShow }) => {
   return (
-    <ul className="about-info">
+    <ul className={`about-info ${ isShow ? 'show' : ''}`}>
       <li className="info-item">
         <div className="info-icon">
           <BsPerson />

@@ -3,7 +3,11 @@
 .about-info {
   @extend %flexBetweenStart;
   width: $web-width;
-  // padding: 0 60px;
+  opacity: 0;
+
+  &.show {
+    @include animation (setShow, 1.2s, .5s);
+  }
 
   .info-item {
     width: 330px;

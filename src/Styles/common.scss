@@ -40,3 +40,28 @@ $z_OneDown: -1;
   display: flex;
   align-items: center;
 }
+
+@mixin animation ($name, $duration, $delay) {
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $name;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+@mixin keyframe ($animation_name) {
+  @keyframes #{$animation_name} {
+      @content;
+  }
+}
+
+@include keyframe(setShow) {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1; 
+  }
+}

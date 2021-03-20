@@ -1,26 +1,20 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NAVBAR_MENU } from '../../Data/config';
 import "./Navbar.scss";
 
-const Navbar = () => {
+const Navbar = ({ pageY }) => {
   const [isShrink, setIsShrink] = useState(false);
   const [menuFocus, setMenuFocus] = useState(0);
 
-  const handleScroll = useCallback(() => {
-    const { pageYOffset } = window;
-    setIsShrink(pageYOffset > 20);
+  useEffect(() => {
+    setIsShrink(pageY > 20);
     setMenuFocus(
-      pageYOffset <= 1010 ? 0
-      : pageYOffset <= 2020 ? 1
-      : pageYOffset <= 3450 ? 2
+      pageY <= 1010 ? 0
+      : pageY <= 2020 ? 1
+      : pageY <= 3450 ? 2
       : 3
     )
-  }, [])
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [handleScroll])
+  }, [pageY])
 
   const changeMenuFocus = (id, scroll) => {
     setMenuFocus(id)

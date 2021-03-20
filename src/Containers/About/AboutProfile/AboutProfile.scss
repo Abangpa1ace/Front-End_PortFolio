@@ -3,6 +3,11 @@
 .about-profile {
   @extend %flexCenter;
   margin: 0 0 100px;
+  opacity: 0;
+
+  &.show {
+    @include animation (setShow, 1.2s, 0s);
+  }
 
   .profile-img {
     width: 160px;
@@ -10,7 +15,6 @@
     border: 10px solid $gray1;
     border-radius: 50%;
     overflow: hidden;
-
     img {
       width: 100%;
     }
@@ -23,5 +27,14 @@
     p {
       font-weight: 400;
     }
+  }
+}
+
+@keyframes ani {
+  from {
+    border: 1px solid red;
+  }
+  to {
+    border: 2px solid blue;
   }
 }

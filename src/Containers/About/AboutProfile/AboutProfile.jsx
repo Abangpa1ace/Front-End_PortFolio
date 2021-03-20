@@ -1,9 +1,9 @@
 import React from 'react';
 import "./AboutProfile.scss";
 
-const AboutProfile = () => {
+const AboutProfile = ({ isShow }) => {
   return (
-    <div className="about-profile">
+    <div className={`about-profile ${ isShow ? 'show' : ''}`}>
       <div className="profile-img">
           <img src="./Images/profile-img.jpeg" alt="profile-img" />
       </div>
