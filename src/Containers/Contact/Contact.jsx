@@ -23,7 +23,7 @@ const Contact = ({ pageY }) => {
     <section id="Contact">
       <div className="contact-container">
         <Title>Contact With Me</Title>
-        <div className={`contact-list ${pageY > 2900 ? 'show' : ''}`}>
+        <div className={`contact-list ${pageY > 2700 ? 'show' : ''}`}>
           <div className="contact-email">
             <h3>Email</h3>
             <p>- Gmail 보내기</p>

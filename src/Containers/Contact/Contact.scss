@@ -2,7 +2,7 @@
 
 #Contact {
   @extend %flexCenterStart;
-  height: 90vh;
+  height: 100%;
   padding: $section-padding;
   background: $gray0;
 
@@ -17,7 +17,7 @@
       opacity: 0;
 
       &.show {
-        @include animation (setShow, 1.2s, 0s);
+        @include animation (setShow, 1s, 0s);
       }
       
       h3 {

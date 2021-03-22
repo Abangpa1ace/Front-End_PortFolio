@@ -11,7 +11,7 @@ const Navbar = ({ pageY }) => {
     setMenuFocus(
       pageY <= 1010 ? 0
       : pageY <= 2020 ? 1
-      : pageY <= 3450 ? 2
+      : pageY <= 3380 ? 2
       : 3
     )
   }, [pageY])

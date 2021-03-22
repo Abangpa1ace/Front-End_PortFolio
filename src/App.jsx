@@ -21,12 +21,10 @@ function App() {
   return (
     <div className="App">
       <Navbar pageY={pageY} />
-      <div>
-        <Main />
-        <About pageY={pageY} />
-        <Project pageY={pageY} />
-        <Contact pageY={pageY} />
-      </div>
+      <Main />
+      <About pageY={pageY} />
+      <Project pageY={pageY} />
+      <Contact pageY={pageY} />
       <Footer />
     </div>
   );

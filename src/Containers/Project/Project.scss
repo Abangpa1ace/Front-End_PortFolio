@@ -2,6 +2,7 @@
 
 #Project {
   @extend %flexCenterStart;
+  height: 100%;
   padding: $section-padding;
 
   .project-container {
@@ -11,13 +12,13 @@
     &.show {
       .project-item {
         &:nth-child(2) {
-          @include animation (setShow, 1.2s, 0s);
+          @include animation (setShow, 1s, 0s);
         }
         &:nth-child(3) {
-          @include animation (setShow, 1.2s, .3s);
+          @include animation (setShow, 1s, .2s);
         }
         &:nth-child(4) {
-          @include animation (setShow, 1.2s, .6s);
+          @include animation (setShow, 1s, .4s);
         }
       }
     }

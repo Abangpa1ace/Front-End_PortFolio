@@ -6,6 +6,6 @@
   opacity: 0;
 
   &.show {
-    @include animation (setShow, 1.2s, .3s);
+    @include animation (setShow, 1.0s, .2s);
   }
 }

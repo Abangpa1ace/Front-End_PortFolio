@@ -16,7 +16,7 @@ const Main = () => {
         </p>
       </div>
       <div className="down-container" color="white">
-        <button className="down-btn">+&nbsp;내려가기</button>
+        <button className="down-btn" onClick={() => window.scrollTo(0, 1011)}>+&nbsp;내려가기</button>
         <p className="down-arrow">⌄</p>
       </div>
     </main>
