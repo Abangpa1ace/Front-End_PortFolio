@@ -1,0 +1,38 @@
+@import '../../../Styles/common.scss';
+
+.info-item {
+  width: 330px;
+  text-align: center;
+
+  .info-icon {
+    @extend %flexCenter;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid $gray1;
+    border-radius: 50%;
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  h3 {
+    margin: 30px 0;
+    color: $beach;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    // text-align: left;
+    line-height: 1.8;
+    
+    strong {
+      font-weight: 500;
+    }
+  }
+}
