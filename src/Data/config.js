@@ -126,7 +126,7 @@ export const PROJECT_LIST = [
     links: {
       github: "https://github.com/Abangpa1ace/React-PJT3-Nikel",
       영상: "/",
-      "사이트 링크": "/",
+      "사이트 링크": "http://ec2-54-180-151-69.ap-northeast-2.compute.amazonaws.com",
     }
   },
 ]
